@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <script src="./scripts/showPic.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>s n a p s h o t s</h1>
+      <section class="innercontainer">
+        <ul class="navbar">
+          <li>
+            <a
+              href="./images/js-gallery-fireworks.jpg"
+              title="Amazing fireworks"
+              onclick="showPic(this); return false;"
+              >Fireworks</a
+            >
+          </li>
+          <li>
+            <a
+              href="./images/js-gallery-coffee.jpg"
+              title="Cup of delicious coffee"
+              onclick="showPic(this); return false;"
+              >Coffee</a
+            >
+          </li>
+          <li>
+            <a
+              href="./images/js-gallery-rose.jpg"
+              title="Beautiful rose"
+              onclick="showPic(this); return false;"
+              >Rose</a
+            >
+          </li>
+          <li>
+            <a
+              href="./images/js-gallery-bigben.jpg"
+              title="Famous Clock"
+              onclick="showPic(this); return false;"
+              >BigBen</a
+            >
+          </li>
+        </ul>
+
+        <figure>
+          <img
+            id="placeholder"
+            src="./images/placeholder.png"
+            alt="my image gallery"
+          />
+        </figure>
+        <p id="description">Choose a photo</p>
+      </section>
+    </section>
+  </body>
+</html>
